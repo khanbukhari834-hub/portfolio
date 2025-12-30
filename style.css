@@ -1,0 +1,123 @@
+/* ===== GENERAL STYLING ===== */
+:root {
+  --primary-color: #1e90ff;     /* Main color (blue) */
+  --secondary-color: #f4b400;   /* Accent color */
+  --dark-color: #0f172a;        /* Dark background */
+  --light-color: #f8fafc;       /* Light background */
+  --text-color: #111827;        /* Normal text */
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+}
+
+body {
+  line-height: 1.6;
+}
+
+/* ===== NAVBAR ===== */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  padding: 15px 40px;
+  background: #000;
+}
+
+.navbar .logo {
+  color: #fff;
+}
+
+.navbar ul {
+  list-style: none;
+  display: flex;
+}
+
+.navbar ul li {
+  margin-left: 20px;
+}
+
+.navbar ul li a {
+  color: white;
+  text-decoration: none;
+}
+
+/* ===== HERO ===== */
+.hero {
+  height: 100vh;
+
+  /* Background Image */
+  background-image: 
+    linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)),
+    url("profile photo.jfif");
+
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+
+  color: white;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+
+.hero span {
+  color: #f4b400;
+}
+
+.hero button {
+  margin-top: 20px;
+  padding: 10px 20px;
+  background: #f4b400;
+  border: none;
+  cursor: pointer;
+}
+
+/* ===== SECTIONS ===== */
+.section {
+  padding: 60px 40px;
+  text-align: center;
+}
+
+.gray {
+  background: #f4f4f4;
+}
+
+.resume-item {
+  margin-top: 20px;
+}
+
+/* ===== CONTACT FORM ===== */
+form {
+  max-width: 400px;
+  margin: auto;
+}
+
+form input,
+form textarea {
+  width: 100%;
+  padding: 10px;
+  margin: 10px 0;
+}
+
+form button {
+  width: 100%;
+  padding: 10px;
+  background: black;
+  color: white;
+  border: none;
+}
+
+/* ===== FOOTER ===== */
+footer {
+  background: black;
+  color: white;
+  text-align: center;
+  padding: 15px;
+}
